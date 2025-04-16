@@ -1,72 +1,102 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nina Nails and Beauty</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url(https://img.freepik.com/fotos-premium/modernes-schoenheitssalon-interieur-luxus-kosmetik-service-shop-spa-raum-generative-ki-trendiges-studio-sauberes-leeres-nagelstudio-oder-geschaeft-mode-glamour-und-design-konzept_788189-10996.jpg) no-repeat center center fixed;
+      background: url('https://img.freepik.com/fotos-premium/modernes-schoenheitssalon-interieur-luxus-kosmetik-service-shop-spa-raum-generative-ki-trendiges-studio-sauberes-leeres-nagelstudio-oder-geschaeft-mode-glamour-und-design-konzept_788189-10996.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
       text-shadow: 1px 1px 4px #000;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
       min-height: 100vh;
     }
 
     header {
       text-align: center;
-      padding-top: 50px;
+      padding-top: 30px;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: 0.3em;
     }
 
     p.subtitle {
-      font-size: 1.3em;
-      margin-bottom: 40px;
+      font-size: 1.2em;
+      margin-bottom: 30px;
     }
 
     section {
       max-width: 800px;
-      margin: 0 auto 40px auto;
+      margin: 0 auto 30px auto;
       background-color: rgba(255, 255, 255, 0.1);
-      padding: 30px;
+      padding: 20px;
       border-radius: 15px;
     }
 
     h2 {
-      font-size: 2em;
-      margin-top: 20px;
+      font-size: 1.6em;
+      margin-top: 10px;
     }
 
     p {
-      font-size: 1.1em;
+      font-size: 1em;
       line-height: 1.6;
     }
 
     .contact {
       text-align: center;
-      font-size: 1.1em;
-      margin-top: 20px;
+      font-size: 1em;
+      margin-top: 10px;
     }
 
     .contact a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 5px;
     }
 
     .contact a:hover {
       text-decoration: underline;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3em;
+      }
+
+      p.subtitle {
+        font-size: 1.3em;
+      }
+
+      section {
+        padding: 30px;
+      }
+
+      .map iframe {
+        height: 400px;
+      }
     }
   </style>
 </head>
@@ -97,7 +127,8 @@
       <p>📷 Instagram: <a href="https://www.instagram.com/nina_nails.aachen?igsh=OTFsemc1bDhqMncw" target="_blank">@nina_nails.aachen</a></p>
       <p>📘 Facebook: <a href="https://www.facebook.com/ninanailsandbeauty" target="_blank">Nina Nails and Beauty</a></p>
     </section>
-  <section class="map">
+
+    <section class="map">
       <h2>Hier findest du uns</h2>
       <p>Besuche uns im Studio!</p>
       <iframe 
@@ -107,6 +138,5 @@
       <p><a href="https://g.co/kgs/nBVVLLT" target="_blank" style="color:white; text-decoration:underline;">📍 Auf Google Maps öffnen</a></p>
     </section>
   </div>
-
 </body>
 </html>
